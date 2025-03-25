@@ -1,0 +1,26 @@
+// Nav bar styles
+
+.nav {
+  border-bottom: 1px solid black;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: -0px;
+  position: sticky;
+  z-index: 100;
+  background-color: $basic-white;
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "sans-serif";
+    margin: 0px 20px;
+
+    i {
+      padding-right: 20px;
+    }
+  }
+}

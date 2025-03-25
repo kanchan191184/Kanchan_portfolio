@@ -1,0 +1,30 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin header-main-common-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  //padding-left: 3.5em;
+}
+
+@mixin button-common-style {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: #7843e9;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  text-transform: uppercase;
+  align-self: center;
+}

@@ -1,0 +1,19 @@
+// Footer
+footer {
+  .footer-content {
+    @include flex-center;
+    justify-content: space-between;
+    background-color: $dark-black;
+    color: $basic-white;
+    padding: 2em;
+
+    .footer-text {
+      font-family: $font-family-primary;
+    }
+
+    .linkedIn-icon {
+      color: $basic-white;
+      text-decoration: none;
+    }
+  }
+}

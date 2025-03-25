@@ -1,0 +1,86 @@
+// Contact section
+.contact-wrapper {
+  @include header-main-common-style;
+  //background-color: $basic-white;
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("../assets/common-bg.svg");
+  color: $basic-black;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 4rem;
+  //max-width: 80rem;
+  //width: 100%;
+  border-radius: 5px;
+  align-items: center;
+  //margin: 5rem auto 0 auto;
+
+  h1 {
+    font-family: $font-family-secondary;
+    font-size: 2.5em;
+  }
+}
+
+form {
+  @include flex-center;
+  flex-direction: column;
+  //max-width: 80%;
+  width: 65%;
+  background-color: $basic-white;
+  padding: 2em;
+
+  h3 {
+    font-family: $font-family-secondary;
+    font-size: 2.5rem;
+    color: $basic-black;
+  }
+
+  .form-group {
+    width: 90%;
+    margin-bottom: 1.5em;
+
+    label {
+      display: block;
+      font-family: $font-family-primary;
+      font-size: 1.2rem;
+      color: $basic-black;
+      margin-bottom: 0.5em;
+    }
+
+    input,
+    textarea {
+      width: 90%;
+      padding: 1em;
+      font-family: $font-family-primary;
+      font-size: 1rem;
+      background-color: #f0f0f0;
+      border: none;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+      border: none;
+      background-color: #f0f0f0;
+    }
+
+    button {
+      //   width: 100%;
+      //   padding: 0.75em;
+      //   font-family: $font-family-primary;
+      //   font-size: 1.2rem;
+      //   color: $basic-white;
+      //   background-color: $primary-brand-color-dark;
+      //   border: none;
+      //   cursor: pointer;
+      //   transition: background-color 0.3s ease;
+      @include button-common-style;
+      &:hover {
+        background-color: $primary-brand-color-light;
+      }
+    }
+  }
+}

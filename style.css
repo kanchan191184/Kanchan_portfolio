@@ -1,0 +1,263 @@
+.nav {
+  border-bottom: 1px solid black;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 0px;
+  position: sticky;
+  z-index: 100;
+  background-color: #ffffff;
+}
+.nav__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "sans-serif";
+  margin: 0px 20px;
+}
+.nav__link i {
+  padding-right: 20px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+header .header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url("../assets/common-bg.svg");
+  color: #404040;
+}
+header .header-container .header-name {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 3em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+header .header-container .header-text {
+  font-family: "open sans", sans-serif;
+  font-size: 2rem;
+  margin: 0px 40px;
+  text-align: center;
+  line-height: 1.5;
+}
+header .header-container .project-link {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: #7843e9;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+main {
+  display: block;
+  width: 100%;
+  padding: 2em 0;
+}
+main .main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  background-color: #fafafa;
+  color: #404040;
+  width: 100%;
+}
+main .main-container .main-heading {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 3em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+main .main-container .main-subheading {
+  font-family: "open sans", sans-serif;
+  margin: 0px 40px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+main .about-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2em;
+}
+main .about-section-wrapper .about-left-section {
+  background-color: #ffffff;
+  color: #404040;
+  width: 50%;
+}
+main .about-section-wrapper .about-left-section h3 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 1.2em;
+  margin: 2em;
+}
+main .about-section-wrapper .about-left-section .about-text p {
+  font-family: "open sans", sans-serif;
+  font-size: 1.3rem;
+  padding: 0px 40px;
+  line-height: 1.7;
+}
+main .about-section-wrapper .about-left-section .margin-Bottom {
+  margin-bottom: 40px;
+}
+main .about-section-wrapper .about-left-section .contact-link {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: #7843e9;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  text-transform: uppercase;
+  align-self: center;
+  margin-left: 2em;
+}
+main .about-section-wrapper .about-skill-right-section {
+  background-color: #ffffff;
+  color: #404040;
+  width: 50%;
+}
+main .about-section-wrapper .about-skill-right-section h3 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 1.2em;
+  margin: 2em;
+}
+main .about-section-wrapper .about-skill-right-section .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .about-section-wrapper .about-skill-right-section .skills__skill {
+  margin-bottom: 1.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5em 0.9em;
+  font-size: 1.6rem;
+  background: rgba(153, 153, 153, 0.2);
+  font-size: 1.4em;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #666;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url("../assets/common-bg.svg");
+  color: #404040;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 4rem;
+  border-radius: 5px;
+  align-items: center;
+}
+.contact-wrapper h1 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 2.5em;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  background-color: #ffffff;
+  padding: 2em;
+}
+form h3 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 2.5rem;
+  color: #404040;
+}
+form .form-group {
+  width: 90%;
+  margin-bottom: 1.5em;
+}
+form .form-group label {
+  display: block;
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  color: #404040;
+  margin-bottom: 0.5em;
+}
+form .form-group input,
+form .form-group textarea {
+  width: 90%;
+  padding: 1em;
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  border: none;
+}
+form .form-group textarea {
+  height: 150px;
+  resize: vertical;
+  border: none;
+  background-color: #f0f0f0;
+}
+form .form-group button {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: #7843e9;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  text-transform: uppercase;
+  align-self: center;
+}
+form .form-group button:hover {
+  background-color: #ebc9c4;
+}
+
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2em;
+}
+footer .footer-content .footer-text {
+  font-family: "open sans", sans-serif;
+}
+footer .footer-content .linkedIn-icon {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */
