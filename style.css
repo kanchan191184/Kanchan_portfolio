@@ -42,8 +42,8 @@ header .header-container .header-name {
 }
 header .header-container .header-text {
   font-family: "open sans", sans-serif;
-  font-size: 2rem;
   margin: 0px 40px;
+  font-size: 2rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -80,10 +80,10 @@ main .main-container {
   width: 100%;
 }
 main .main-container .main-heading {
-  font-family: "Rammetto One", sans-serif;
   font-size: 3em;
   margin-bottom: 40px;
   text-align: center;
+  font-family: "Rammetto One", sans-serif;
 }
 main .main-container .main-subheading {
   font-family: "open sans", sans-serif;

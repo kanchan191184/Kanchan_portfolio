@@ -13,18 +13,13 @@ main {
     //height: 700px;
 
     .main-heading {
+      @include heading-name-style;
       font-family: $font-family-secondary;
-      font-size: 3em;
-      margin-bottom: 40px;
-      text-align: center;
     }
 
     .main-subheading {
       font-family: $font-family-primary;
-      margin: 0px 40px;
-      font-size: 2rem;
-      text-align: center;
-      line-height: 1.5;
+      @include text-paragraph-style;
     }
   }
 

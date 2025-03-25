@@ -28,3 +28,25 @@
   text-transform: uppercase;
   align-self: center;
 }
+
+@mixin background-Radient-style {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("../assets/common-bg.svg");
+}
+
+@mixin heading-name-style {
+  font-size: 3em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@mixin text-paragraph-style {
+  margin: 0px 40px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+}

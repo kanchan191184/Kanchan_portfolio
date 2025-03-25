@@ -1,13 +1,7 @@
 // Contact section
 .contact-wrapper {
   @include header-main-common-style;
-  //background-color: $basic-white;
-  background: linear-gradient(
-      to right,
-      rgba(245, 245, 245, 0.8),
-      rgba(245, 245, 245, 0.8)
-    ),
-    url("../assets/common-bg.svg");
+  @include background-Radient-style;
   color: $basic-black;
 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -27,7 +21,6 @@
 form {
   @include flex-center;
   flex-direction: column;
-  //max-width: 80%;
   width: 65%;
   background-color: $basic-white;
   padding: 2em;
@@ -68,15 +61,6 @@ form {
     }
 
     button {
-      //   width: 100%;
-      //   padding: 0.75em;
-      //   font-family: $font-family-primary;
-      //   font-size: 1.2rem;
-      //   color: $basic-white;
-      //   background-color: $primary-brand-color-dark;
-      //   border: none;
-      //   cursor: pointer;
-      //   transition: background-color 0.3s ease;
       @include button-common-style;
       &:hover {
         background-color: $primary-brand-color-light;
