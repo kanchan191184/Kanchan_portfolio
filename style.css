@@ -365,14 +365,37 @@ form .form-group button:hover {
 footer .footer-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: #000000;
   color: #ffffff;
   padding: 2em;
 }
-footer .footer-content .linkedIn-icon {
+footer .footer-content .footer-logo {
+  display: flex;
+  align-items: center;
+  margin: auto 40px;
+}
+footer .footer-content .footer-logo h3 {
+  margin: 5px 20px;
+}
+footer .footer-content hr {
+  width: 100%;
+  border: 1px solid #cd9e29;
+  margin: 1em 0;
+}
+footer .footer-content .footer-text {
+  font-size: 12px;
+}
+footer .footer-content .icons {
   color: #ffffff;
   text-decoration: none;
+  font-size: 26px;
+  margin: 0px 10px;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-content .icons:hover {
+  color: #cd9e29;
+  transform: scale(1.2);
 }
 
 * {

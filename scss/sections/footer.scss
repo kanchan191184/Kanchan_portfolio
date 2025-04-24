@@ -7,14 +7,39 @@
 footer {
   .footer-content {
     @include flex-center;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: $dark-black;
     color: $basic-white;
     padding: 2em;
 
-    .linkedIn-icon {
+    .footer-logo {
+      @include flex-center;
+      margin: auto 40px;
+
+      h3 {
+        margin: 5px 20px;
+      }
+    }
+
+    hr {
+      width: 100%;
+      border: 1px solid $button-color;
+      margin: 1em 0;
+    }
+    .footer-text {
+      font-size: 12px;
+    }
+    .icons {
       color: $basic-white;
       text-decoration: none;
+      font-size: 26px;
+      margin: 0px 10px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $button-color; // Change to your desired hover color
+        transform: scale(1.2); // Slightly enlarge the icon on hover
+      }
     }
   }
 }
