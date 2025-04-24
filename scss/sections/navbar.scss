@@ -1,7 +1,9 @@
 // Nav bar styles
 
+@use "../colors" as *;
+
 .nav {
-  border-bottom: 1px solid black;
+  //border-bottom: 1px solid $dark-black;
   padding: 30px 10%;
   display: flex;
   justify-content: space-between;
@@ -13,14 +15,17 @@
 
   &__link {
     text-decoration: none;
-    color: black;
+    color: $button-color;
+    transition: color 0.3s;
     font-size: 1.2rem;
     font-weight: bold;
-    font-family: "sans-serif";
     margin: 0px 20px;
 
     i {
       padding-right: 20px;
     }
+  }
+  &__link:hover {
+    color: $button-color-hover;
   }
 }

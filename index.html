@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/61bbff02dd.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Kanchan Portfolio</title>
   </head>
   <body>
@@ -16,9 +22,10 @@
         ><i class="fa-solid fa-user"> </i> Kanchan Gupta</a
       >
       <div>
-        <a href="#about-section-id" class="nav__link">About</a>
-        <a href="" class="nav__link">Projects</a>
-        <a href="#contact-section-id" class="nav__link">Contact</a>
+        <a href="#aboutSectionId" class="nav__link">About</a>
+        <a href="#projectSectionId" class="nav__link">Projects</a>
+        <a href="#experienceSectionId" class="nav__link">Experience</a>
+        <a href="#contactSectionId" class="nav__link">Contact</a>
       </div>
     </nav>
     <header>
@@ -28,10 +35,10 @@
           A Result-Oriented Web Developer building and managing Websites and Web
           Applications that leads to the success of the overall product
         </p>
-        <a class="project-link" href="#">Projects</a>
+        <a class="project-link" href="#projectSectionId">Projects</a>
       </div>
     </header>
-    <main id="about-section-id">
+    <main id="aboutSectionId">
       <div class="main-container">
         <h2 class="main-heading">About me</h2>
         <p class="main-subheading">
@@ -67,7 +74,7 @@
               <strong>contact</strong>
               "me."
             </p>
-            <a class="contact-link" href="#contact-section-id">Contact</a>
+            <a class="contact-link" href="#contactSectionId">Contact</a>
           </div>
         </div>
         <div class="about-skill-right-section">
@@ -86,9 +93,164 @@
           </div>
         </div>
       </div>
+      <div id="projectSectionId" class="projects">
+        <h3 class="project-heading">Projects</h3>
+        <div class="card">
+          <section class="project-left-section">
+            <h4>Morse Translator</h4>
+            <p>
+              Developed a responsive Morse Code Translator using JavaScript,
+              HTML, and CSS. Implemented auto-detection of input type to
+              automatically translate to the corresponding format. Translation
+              logic handles spacing rules accurately, with unit-tested core
+              functions using Jest, and a clean UI optimized for all screen
+              sizes.
+            </p>
+          </section>
+          <section class="project-skill-right-section">
+            <h4>Skills Used</h4>
+            <div class="skills">
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">Responsive Design</div>
+              <div class="skills__skill">Unit Testing</div>
+            </div>
+          </section>
+        </div>
+        <div class="card">
+          <section class="project-left-section">
+            <h4>Hangman Game</h4>
+            <p>
+              Built a fully responsive Hangman game using JavaScript, HTML, and
+              CSS, featuring DOM manipulation, event handling, and interactive
+              UI with letter buttons. Implemented game logic to track guesses,
+              display win/loss messages, and support replay functionality.
+            </p>
+          </section>
+          <!-- <section>
+            <img
+              class="project-image"
+              src="./assets/hangmanGame.jpg"
+              alt="Hangman Game"
+            />
+          </section> -->
+          <section class="project-skill-right-section">
+            <h4>Skills Used</h4>
+            <div class="skills">
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">Responsive Design</div>
+              <div class="skills__skill">DOM Manipulation</div>
+            </div>
+          </section>
+        </div>
+        <div class="card">
+          <section class="project-left-section">
+            <h4>Online Food Ordering Website</h4>
+            <p>
+              Developed the User Interface (UI) using HTML/CSS & JSX for all the
+              pages and components where user can see the available food items
+              for ordering, add to cart and place the order.
+            </p>
+          </section>
+          <section class="project-skill-right-section">
+            <h4>Skills Used</h4>
+            <div class="skills">
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">React JS</div>
+            </div>
+          </section>
+        </div>
+        <div class="card">
+          <section class="project-left-section">
+            <h4>Cloud Subscription Marketplace</h4>
+            <p>
+              Responsible for creating UI for dashboard which consist of pie
+              chart, line graph, bar graph, doughnuts to represent data using
+              HTML/CSS/Bootstrap & Angular (ng2-charts) (Angular charts) for
+              this website which provides & manages cloud service to small
+              enterprises.
+            </p>
+          </section>
+          <section class="project-skill-right-section">
+            <h4>Skills Used</h4>
+            <div class="skills">
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">Angular</div>
+              <div class="skills__skill">Azure</div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="experienceSectionId" class="experience">
+        <h3 class="experience-heading">Experience</h3>
+        <div class="card">
+          <section class="experience-left-section">
+            <div class="experience-company-info">
+              <h4>Associate - Cognizant Australia</h4>
+              <span>Nov 2023 - March 2024</span>
+            </div>
+            <div class="experience-client-info">
+              <h4>Client - BRG Red Balloon, Sydney</h4>
+              <p>
+                In this Project, I worked as a core Front-End Developer. I was
+                responsible for complete UI development, integration with
+                Salesforce Commerce platform and unit and integration testing my
+                stories. For design issues and critical defects, I coordinated
+                with client development team and contributed for an efficient
+                issue resolution.
+              </p>
+            </div>
+          </section>
+          <section class="experience-skill-right-section">
+            <h4>Skills Used</h4>
+            <div class="skills">
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">React JS</div>
+            </div>
+          </section>
+        </div>
+        <div class="card">
+          <section class="experience-left-section">
+            <div class="experience-company-info">
+              <h4>Programmer Analyst - Cognizant Australia</h4>
+              <span>Sep 2021 - Nov 2023</span>
+            </div>
+            <div class="experience-client-info">
+              <h4>Client - UNSW, Sydney</h4>
+              <p>
+                In this Work, I was the solo consultant providing end to end
+                support for UNSW’s Uni-verse app. It required work on both
+                Front-end & Back-End with all environments (Dev, Test and Prod).
+                I picked up the necessary skills and delivered the changes or
+                enhancements required by client as per business requirements. I
+                collaborated with UNSW stakeholders and third-party platform
+                provider. I also assisted in troubleshooting the service tickets
+                raised by the students related to Uni-verse app.
+              </p>
+            </div>
+          </section>
+          <section class="experience-skill-right-section">
+            <h4>Skills Used</h4>
+            <div class="skills">
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">React JS</div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
 
-    <div id="contact-section-id" class="contact-wrapper">
+    <div id="contactSectionId" class="contact-wrapper">
       <form action="index.html" method="post">
         <h3>Contact</h3>
         <div class="form-group">

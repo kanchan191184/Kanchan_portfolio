@@ -1,3 +1,5 @@
+@use "./colors" as *;
+
 @mixin flex-center {
   display: flex;
   align-items: center;
@@ -18,8 +20,9 @@
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
-  padding: 20px 40px;
-  background-color: #7843e9;
+  padding: 10px 20px;
+  // background-color: #7843e9;
+  background-color: $button-color;
   color: white;
   letter-spacing: 1px;
   font-weight: 700;
@@ -39,14 +42,23 @@
 }
 
 @mixin heading-name-style {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 40px;
   text-align: center;
 }
 
 @mixin text-paragraph-style {
   margin: 0px 40px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
   line-height: 1.5;
+}
+
+@mixin skills-card-section {
+  // font-size: 1.2em;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5em 0.9em;
 }

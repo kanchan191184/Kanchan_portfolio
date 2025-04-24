@@ -1,24 +1,27 @@
 // About section
+
+@use "../mixins" as *;
+@use "../colors" as *;
+@use "../typography" as *;
+
 main {
   display: block;
   width: 100%;
   //height: 100%;
   padding: 2em 0;
+  background-color: $background-color;
 
   .main-container {
     @include header-main-common-style;
-    background-color: #fafafa;
-    color: $basic-black;
+    background-color: $background-color;
     width: 100%;
     //height: 700px;
 
     .main-heading {
       @include heading-name-style;
-      font-family: $font-family-secondary;
     }
 
     .main-subheading {
-      font-family: $font-family-primary;
       @include text-paragraph-style;
     }
   }
@@ -27,24 +30,21 @@ main {
     display: flex;
     //@include header-main-common-style;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin-bottom: 2em;
     //height: 1000px;
 
     .about-left-section {
       //@include header-main-common-style;
       background-color: $basic-white;
-      color: $basic-black;
       width: 50%;
 
       h3 {
-        font-family: $font-family-secondary;
         font-size: 1.2em;
         margin: 2em;
       }
 
       .about-text p {
-        font-family: $font-family-primary;
         font-size: 1.3rem;
         padding: 0px 40px;
         line-height: 1.7;
@@ -60,12 +60,9 @@ main {
     }
     .about-skill-right-section {
       //@include header-main-common-style;
-      background-color: $basic-white;
-      color: $basic-black;
-      width: 50%;
+      width: 40%;
 
       h3 {
-        font-family: $font-family-secondary;
         font-size: 1.2em;
         margin: 2em;
       }
@@ -75,15 +72,9 @@ main {
         flex-wrap: wrap;
 
         &__skill {
-          margin-bottom: 1.5rem;
-          margin-right: 0.5rem;
-          padding: 0.5em 0.9em;
-          font-size: 1.6rem;
-          background: rgba(153, 153, 153, 0.2);
-          font-size: 1.4em;
-          border-radius: 5px;
-          font-weight: 600;
-          color: #666;
+          @include skills-card-section;
+          background: $button-color;
+          color: $basic-white;
         }
       }
     }

@@ -1,5 +1,4 @@
 .nav {
-  border-bottom: 1px solid black;
   padding: 30px 10%;
   display: flex;
   justify-content: space-between;
@@ -11,20 +10,23 @@
 }
 .nav__link {
   text-decoration: none;
-  color: black;
+  color: #cd9e29;
+  transition: color 0.3s;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "sans-serif";
   margin: 0px 20px;
 }
 .nav__link i {
   padding-right: 20px;
 }
+.nav__link:hover {
+  color: #efaf0d;
+}
 
 header {
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 header .header-container {
   display: flex;
@@ -32,18 +34,15 @@ header .header-container {
   justify-content: center;
   flex: 1;
   background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url("../assets/common-bg.svg");
-  color: #404040;
 }
 header .header-container .header-name {
-  font-family: "Rammetto One", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 40px;
   text-align: center;
 }
 header .header-container .header-text {
-  font-family: "open sans", sans-serif;
   margin: 0px 40px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -54,8 +53,8 @@ header .header-container .project-link {
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
-  padding: 20px 40px;
-  background-color: #7843e9;
+  padding: 10px 20px;
+  background-color: #cd9e29;
   color: white;
   letter-spacing: 1px;
   font-weight: 700;
@@ -69,47 +68,42 @@ main {
   display: block;
   width: 100%;
   padding: 2em 0;
+  background-color: #ffffff;
 }
 main .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  background-color: #fafafa;
-  color: #404040;
+  background-color: #ffffff;
   width: 100%;
 }
 main .main-container .main-heading {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 40px;
   text-align: center;
-  font-family: "Rammetto One", sans-serif;
 }
 main .main-container .main-subheading {
-  font-family: "open sans", sans-serif;
   margin: 0px 40px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
   line-height: 1.5;
 }
 main .about-section-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   margin-bottom: 2em;
 }
 main .about-section-wrapper .about-left-section {
   background-color: #ffffff;
-  color: #404040;
   width: 50%;
 }
 main .about-section-wrapper .about-left-section h3 {
-  font-family: "Rammetto One", sans-serif;
   font-size: 1.2em;
   margin: 2em;
 }
 main .about-section-wrapper .about-left-section .about-text p {
-  font-family: "open sans", sans-serif;
   font-size: 1.3rem;
   padding: 0px 40px;
   line-height: 1.7;
@@ -124,8 +118,8 @@ main .about-section-wrapper .about-left-section .contact-link {
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
-  padding: 20px 40px;
-  background-color: #7843e9;
+  padding: 10px 20px;
+  background-color: #cd9e29;
   color: white;
   letter-spacing: 1px;
   font-weight: 700;
@@ -136,12 +130,9 @@ main .about-section-wrapper .about-left-section .contact-link {
   margin-left: 2em;
 }
 main .about-section-wrapper .about-skill-right-section {
-  background-color: #ffffff;
-  color: #404040;
-  width: 50%;
+  width: 40%;
 }
 main .about-section-wrapper .about-skill-right-section h3 {
-  font-family: "Rammetto One", sans-serif;
   font-size: 1.2em;
   margin: 2em;
 }
@@ -150,15 +141,13 @@ main .about-section-wrapper .about-skill-right-section .skills {
   flex-wrap: wrap;
 }
 main .about-section-wrapper .about-skill-right-section .skills__skill {
+  border-radius: 5px;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   margin-right: 0.5rem;
   padding: 0.5em 0.9em;
-  font-size: 1.6rem;
-  background: rgba(153, 153, 153, 0.2);
-  font-size: 1.4em;
-  border-radius: 5px;
-  font-weight: 600;
-  color: #666;
+  background: #cd9e29;
+  color: #ffffff;
 }
 
 .contact-wrapper {
@@ -174,7 +163,6 @@ main .about-section-wrapper .about-skill-right-section .skills__skill {
   align-items: center;
 }
 .contact-wrapper h1 {
-  font-family: "Rammetto One", sans-serif;
   font-size: 2.5em;
 }
 
@@ -183,11 +171,9 @@ form {
   align-items: center;
   flex-direction: column;
   width: 65%;
-  background-color: #ffffff;
   padding: 2em;
 }
 form h3 {
-  font-family: "Rammetto One", sans-serif;
   font-size: 2.5rem;
   color: #404040;
 }
@@ -197,7 +183,6 @@ form .form-group {
 }
 form .form-group label {
   display: block;
-  font-family: "open sans", sans-serif;
   font-size: 1.2rem;
   color: #404040;
   margin-bottom: 0.5em;
@@ -206,7 +191,6 @@ form .form-group input,
 form .form-group textarea {
   width: 90%;
   padding: 1em;
-  font-family: "open sans", sans-serif;
   font-size: 1rem;
   background-color: #f0f0f0;
   border: none;
@@ -224,8 +208,8 @@ form .form-group button {
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
-  padding: 20px 40px;
-  background-color: #7843e9;
+  padding: 10px 20px;
+  background-color: #cd9e29;
   color: white;
   letter-spacing: 1px;
   font-weight: 700;
@@ -238,6 +222,146 @@ form .form-group button:hover {
   background-color: #ebc9c4;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url("../assets/common-bg.svg");
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .project-heading {
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 1em;
+}
+.projects .card {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 2em;
+  border: 2px solid #cd9e29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2); /* Outer shadow for 3D effect */
+}
+.projects .card:hover {
+  box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3), 3px 3px 7px rgba(0, 0, 0, 0.3); /* Stronger outer shadow on hover */
+}
+.projects .card .project-left-section {
+  width: 60%;
+}
+.projects .card .project-left-section h4 {
+  font-size: 1.2em;
+  margin: 2em;
+  text-decoration: underline;
+  text-decoration-color: #cd9e29;
+}
+.projects .card .project-left-section p {
+  font-size: 1.3rem;
+  padding: 0px 40px;
+  line-height: 1.7;
+}
+.projects .card .project-skill-right-section {
+  width: 30%;
+}
+.projects .card .project-skill-right-section h4 {
+  font-size: 1.2em;
+  margin: 2em;
+}
+.projects .card .project-skill-right-section .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects .card .project-skill-right-section .skills__skill {
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5em 0.9em;
+  background: #cd9e29;
+  color: #ffffff;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience .experience-heading {
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 1em;
+}
+.experience .card {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 2em;
+  border: 2px solid #cd9e29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2); /* Outer shadow for 3D effect */
+}
+.experience .card:hover {
+  box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3), 3px 3px 7px rgba(0, 0, 0, 0.3); /* Stronger outer shadow on hover */
+}
+.experience .card .experience-left-section {
+  width: 63%;
+}
+.experience .card .experience-left-section .experience-company-info {
+  display: inline-flex;
+}
+.experience .card .experience-left-section .experience-company-info h4 {
+  font-size: 1.2em;
+  margin: 2em;
+  text-decoration: underline;
+  text-decoration-color: #cd9e29;
+}
+.experience .card .experience-left-section .experience-company-info span {
+  font-size: 1.2em;
+  margin: 2em;
+}
+.experience .card .experience-left-section .experience-client-info h4 {
+  font-size: 1em;
+  margin: 2em;
+  text-decoration: underline;
+  text-decoration-color: #cd9e29;
+}
+.experience .card .experience-left-section .experience-client-info p {
+  font-size: 1.3rem;
+  padding: 0px 40px;
+  line-height: 1.7;
+}
+.experience .card .experience-skill-right-section {
+  width: 30%;
+}
+.experience .card .experience-skill-right-section h4 {
+  font-size: 1.2em;
+  margin: 2em;
+}
+.experience .card .experience-skill-right-section .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience .card .experience-skill-right-section .skills__skill {
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5em 0.9em;
+  background: #cd9e29;
+  color: #ffffff;
+}
+
 footer .footer-content {
   display: flex;
   align-items: center;
@@ -245,9 +369,6 @@ footer .footer-content {
   background-color: #000000;
   color: #ffffff;
   padding: 2em;
-}
-footer .footer-content .footer-text {
-  font-family: "open sans", sans-serif;
 }
 footer .footer-content .linkedIn-icon {
   color: #ffffff;
@@ -258,6 +379,16 @@ footer .footer-content .linkedIn-icon {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  color: #1c3f32;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-padding-top: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
