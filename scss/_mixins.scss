@@ -10,18 +10,16 @@
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  //padding-left: 3.5em;
 }
 
 @mixin button-common-style {
   margin-top: 40px;
-  font-size: 1.2rem;
+  font-size: 14px;
   border: none;
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
   padding: 10px 20px;
-  // background-color: #7843e9;
   background-color: $button-color;
   color: white;
   letter-spacing: 1px;
@@ -30,6 +28,21 @@
   transition: transform 0.3s;
   text-transform: uppercase;
   align-self: center;
+}
+
+@mixin button-hover-background-style {
+  background-color: $button-color-hover;
+  transform: scale(1.1);
+}
+
+@mixin button-hover-style {
+  color: $button-color-hover;
+  transform: scale(1.1);
+}
+
+@mixin button-text-style {
+  color: $button-color;
+  transition: $button-color 0.3s ease;
 }
 
 @mixin background-Radient-style {
@@ -45,6 +58,7 @@
   font-size: 2em;
   margin-bottom: 40px;
   text-align: center;
+  color: $text-color;
 }
 
 @mixin text-paragraph-style {
@@ -55,7 +69,6 @@
 }
 
 @mixin skills-card-section {
-  // font-size: 1.2em;
   border-radius: 5px;
   font-weight: 600;
   margin-bottom: 1.5rem;

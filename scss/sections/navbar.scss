@@ -1,31 +1,47 @@
 // Nav bar styles
 
 @use "../colors" as *;
+@use "../mixins" as *;
 
-.nav {
-  //border-bottom: 1px solid $dark-black;
-  padding: 30px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  top: -0px;
-  position: sticky;
-  z-index: 100;
+.navbar {
+  font-size: 16px;
   background-color: $basic-white;
 
-  &__link {
-    text-decoration: none;
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1.2em;
+    font-weight: bold;
     color: $button-color;
-    transition: color 0.3s;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    @include button-text-style;
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0px 20px;
 
-    i {
-      padding-right: 20px;
+    &:hover {
+      @include button-hover-style;
     }
   }
-  &__link:hover {
-    color: $button-color-hover;
+
+  .navbar-toggler {
+    color: $button-color;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+    i {
+      @include button-text-style;
+
+      &:hover {
+        @include button-hover-style;
+      }
+    }
   }
 }

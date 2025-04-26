@@ -16,11 +16,9 @@
 
   .card {
     display: flex;
-    //@include header-main-common-style;
     justify-content: space-between;
     width: 90%;
     margin-bottom: 2em;
-    //height: 1000px;
     border: 2px solid $button-color;
     border-radius: 10px;
 
@@ -34,55 +32,54 @@
     }
 
     .experience-left-section {
-      //@include header-main-common-style;
-      width: 63%;
-
       .experience-company-info {
         display: inline-flex;
-        h4 {
+        color: $text-color;
+        .company-name {
           font-size: 1.2em;
           margin: 2em;
           text-decoration: underline;
           text-decoration-color: $button-color;
         }
 
-        span {
+        .company-dates {
           font-size: 1.2em;
           margin: 2em;
+          text-decoration: none;
         }
       }
       .experience-client-info {
         h4 {
-          font-size: 1em;
-          margin: 2em;
-          text-decoration: underline;
+          font-size: 1.2em;
+          margin: 0 2em 2em 2em;
+          font-weight: bold;
           text-decoration-color: $button-color;
+          color: $text-color;
         }
 
         p {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           padding: 0px 40px;
           line-height: 1.7;
-          //margin-bottom: 1em;
         }
       }
     }
     .experience-skill-right-section {
-      //@include header-main-common-style;
-      width: 30%;
-
       h4 {
         font-size: 1.2em;
         margin: 2em;
+        font-weight: bold;
+        color: $text-color;
       }
 
       .skills {
         display: flex;
         flex-wrap: wrap;
+        margin: 2em;
 
         &__skill {
           @include skills-card-section;
-          background: $button-color;
+          background: $text-color;
           color: $basic-white;
         }
       }

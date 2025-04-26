@@ -23,6 +23,11 @@ header {
 
     .project-link {
       @include button-common-style;
+
+      &:hover {
+        background-color: $button-color-hover;
+        transform: scale(1.1); // Slightly enlarge the icon on hover
+      }
     }
   }
 }

@@ -10,15 +10,11 @@ footer {
     flex-direction: column;
     background-color: $dark-black;
     color: $basic-white;
-    padding: 2em;
+    border-radius: 5px;
 
     .footer-logo {
       @include flex-center;
-      margin: auto 40px;
-
-      h3 {
-        margin: 5px 20px;
-      }
+      margin-top: 10px;
     }
 
     hr {
@@ -37,8 +33,7 @@ footer {
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color: $button-color; // Change to your desired hover color
-        transform: scale(1.2); // Slightly enlarge the icon on hover
+        @include button-hover-style;
       }
     }
   }

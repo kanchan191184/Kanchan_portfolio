@@ -8,64 +8,36 @@
   @include header-main-common-style;
   @include background-Radient-style;
   color: $basic-black;
-
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 4rem;
-  //max-width: 80rem;
-  //width: 100%;
-  border-radius: 5px;
   align-items: center;
-  //margin: 5rem auto 0 auto;
+  margin-bottom: 20px;
 
-  h1 {
-    font-size: 2.5em;
-  }
-}
-
-form {
-  @include flex-center;
-  flex-direction: column;
-  width: 65%;
-  // background-color: $basic-white;
-  padding: 2em;
-
-  h3 {
-    font-size: 2.5rem;
-    color: $basic-black;
+  .contact-heading {
+    @include heading-name-style;
   }
 
-  .form-group {
-    width: 90%;
-    margin-bottom: 1.5em;
+  .contact-logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    margin-top: 1.5em;
 
-    label {
-      display: block;
-      font-size: 1.2rem;
-      color: $basic-black;
-      margin-bottom: 0.5em;
-    }
+    .icons {
+      color: $button-color;
+      display: flex;
+      justify-content: start;
+      text-decoration: none;
+      gap: 20px;
 
-    input,
-    textarea {
-      width: 90%;
-      padding: 1em;
-      font-size: 1rem;
-      background-color: #f0f0f0;
-      border: none;
-    }
-
-    textarea {
-      height: 150px;
-      resize: vertical;
-      border: none;
-      background-color: #f0f0f0;
-    }
-
-    button {
-      @include button-common-style;
       &:hover {
-        background-color: $primary-brand-color-light;
+        @include button-hover-style;
       }
+    }
+
+    .fa-brands {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px;
     }
   }
 }
