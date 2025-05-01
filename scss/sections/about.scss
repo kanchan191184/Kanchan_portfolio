@@ -66,6 +66,8 @@ main {
         display: flex;
         flex-wrap: wrap;
         margin: 2em;
+        width: 90%;
+        justify-content: center;
 
         &__skill {
           @include skills-card-section;

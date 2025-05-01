@@ -49,11 +49,14 @@
         line-height: 1.7;
       }
     }
-
+    .projects-links {
+      margin-left: 15px;
+    }
     .project-link {
       @include button-common-style;
       display: inline-block; // Ensure the button behaves as a block-level element
-      margin: 2em 0em 2em 2em;
+      // margin: 2em 0em 2em 2em;
+      margin: 1em;
 
       &:hover {
         @include button-hover-background-style;

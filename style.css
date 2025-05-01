@@ -163,6 +163,8 @@ main .about-section-wrapper .about-skill-right-section .skills {
   display: flex;
   flex-wrap: wrap;
   margin: 2em;
+  width: 90%;
+  justify-content: center;
 }
 main .about-section-wrapper .about-skill-right-section .skills__skill {
   border-radius: 5px;
@@ -258,6 +260,9 @@ main .about-section-wrapper .about-skill-right-section .skills__skill {
   padding: 0px 40px;
   line-height: 1.7;
 }
+.projects .card .projects-links {
+  margin-left: 15px;
+}
 .projects .card .project-link {
   margin-top: 40px;
   font-size: 14px;
@@ -275,7 +280,7 @@ main .about-section-wrapper .about-skill-right-section .skills__skill {
   text-transform: uppercase;
   align-self: center;
   display: inline-block;
-  margin: 2em 0em 2em 2em;
+  margin: 1em;
 }
 .projects .card .project-link:hover {
   background-color: #efaf0d;
