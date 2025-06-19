@@ -51,7 +51,7 @@
       .experience-client-info {
         h4 {
           font-size: 1.2em;
-          margin: 0 2em 2em 2em;
+          margin: 0 2em 1em 2em;
           font-weight: bold;
           text-decoration-color: $button-color;
           color: $text-color;
@@ -67,7 +67,7 @@
     .experience-skill-right-section {
       h4 {
         font-size: 1.2em;
-        margin: 2em;
+        margin: 1em 2em;
         font-weight: bold;
         color: $text-color;
       }
@@ -75,7 +75,7 @@
       .skills {
         display: flex;
         flex-wrap: wrap;
-        margin: 2em;
+        margin: 1em 2em;
 
         &__skill {
           @include skills-card-section;
