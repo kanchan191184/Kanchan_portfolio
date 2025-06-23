@@ -23,6 +23,10 @@
   color: #efaf0d;
   transform: scale(1.1);
 }
+.navbar .nav-link:active, .navbar .nav-link:focus {
+  color: #cd9e29;
+  border-bottom: 2px solid #cd9e29;
+}
 .navbar .navbar-toggler {
   color: #cd9e29;
   border: none;
@@ -247,6 +251,21 @@ main .about-section-wrapper .about-skill-right-section .skills__skill {
 .projects .card:hover {
   box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3), 3px 3px 7px rgba(0, 0, 0, 0.3); /* Stronger outer shadow on hover */
 }
+.projects .card .project-left-section .project-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.projects .card .project-left-section .project-image {
+  width: 80%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.projects .card .project-left-section .project-content p {
+  width: 57%;
+  margin: 1em 2em;
+}
 .projects .card .project-left-section h4 {
   font-size: 1.3em;
   margin: 1em 2em;
@@ -255,7 +274,7 @@ main .about-section-wrapper .about-skill-right-section .skills__skill {
   text-decoration-color: #cd9e29;
   color: #1c3f32;
 }
-.projects .card .project-left-section p {
+.projects .card .project-left-section s p {
   font-size: 1.1rem;
   padding: 0px 40px;
   line-height: 1.7;

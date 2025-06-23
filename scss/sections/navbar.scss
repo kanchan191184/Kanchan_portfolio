@@ -28,6 +28,11 @@
     &:hover {
       @include button-hover-style;
     }
+
+    &:active, &:focus {
+      color: $button-color;
+      border-bottom: 2px solid $button-color;
+    }
   }
 
   .navbar-toggler {
