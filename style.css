@@ -326,6 +326,52 @@ main .about-section-wrapper .about-skill-right-section .skills__skill {
   color: #ffffff;
 }
 
+@media (max-width: 900px) {
+  .projects .card {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .projects .project-left-section,
+  .projects .project-skill-right-section,
+  .projects .projects-links {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .projects .project-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .projects .project-image {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  .projects .project-content p {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+  .projects {
+    padding: 0 5px;
+  }
+  .projects .card {
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 0.95em;
+  }
+  .projects .project-heading {
+    font-size: 1.3em;
+    margin: 0.5em 0;
+  }
+  .projects .project-image {
+    height: 120px;
+  }
+}
 .experience {
   display: flex;
   flex-direction: column;
